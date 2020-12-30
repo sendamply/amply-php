@@ -1,0 +1,32 @@
+{
+  "name": "amply/amply-php",
+  "description": "PHP SDK for Amply",
+  "type": "library",
+  "homepage": "http://github.com/sendamply/amply-php",
+  "keywords": ["Amply", "amply", "email", "transactional email", "sendamply", "send"],
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "Amply",
+        "email": "support@sendamply.com"
+    }
+  ],
+  "require": {
+      "php": ">=7.0",
+      "ext-curl": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "suggest": {
+    "composer/ca-bundle": "Including this library will ensure that a valid CA bundle is available for secure connections"
+  },
+  "autoload": {
+    "psr-4": {
+      "Amply\\": "lib/"
+    },
+    "classmap": [
+      "lib/Amply.php"
+    ]
+  }
+}
